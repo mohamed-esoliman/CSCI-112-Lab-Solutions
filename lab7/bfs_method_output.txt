@@ -1,0 +1,80 @@
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+========================== RESTART: M:\msoliman\bt.py ==========================
+Added the range 1 - 26 to a BT tree. Should print a balanced tree:
+
+         15
+      7
+         14
+   2
+         13
+      6
+            24
+         12
+            25
+1
+            22
+         10
+            23
+      4
+            20
+         11
+            21
+   3
+            19
+         8
+            18
+      5
+            17
+         9
+            16
+
+Testing the bfs search method. 23 is in the tree. Should print the nodes it visits and then true:
+1  at depth: 1
+3  at depth: 2
+2  at depth: 2
+5  at depth: 3
+4  at depth: 3
+6  at depth: 3
+7  at depth: 3
+9  at depth: 4
+8  at depth: 4
+11  at depth: 4
+10  at depth: 4
+12  at depth: 4
+13  at depth: 4
+14  at depth: 4
+15  at depth: 4
+16  at depth: 5
+17  at depth: 5
+18  at depth: 5
+19  at depth: 5
+21  at depth: 5
+20  at depth: 5
+23  at depth: 5
+True
+
+27 is not in the tree. Should print false:
+False
+
+
+Building a tree with 20000 nodes. Could take a few seconds...
+Tree has a height of 14
+
+FULL BFS for target 10000:
+True
+21.06 milli seconds.
+
+
+FULL BFS for a missing datum:
+False
+31.65 milli seconds.
+
+
+BFS for a missing datum; depth limited to 10:
+Maxed out at depth 10; quitting...
+False
+15.33 milli seconds.
+
+
